@@ -1,14 +1,17 @@
-# Auth0 + Ruby on Rails API Sample
+# Auth0 + Ruby on Rails API Seed + Samples
+This project goal is to help integrating Auth0 capabilities in your Ruby on Rails API.
 
+You can learn more about the seed project and samples in the [Auth0 Rails API quickstart](https://auth0.com/docs/quickstart/backend/rails).
 
-# Installation
+## Contents
+### 00 - Started Seed
+Learn how to setup your API integrating JWT.
 
-Start by renaming the `.env.example` file to `.env` and provide the Auth0 client ID, domain, and client secret for your app.
+### 01 - Authentication RS256
+Learn how to secure your API using a JWT signed with RS256.
 
-Run `bundle install`, then run `rails s`. The app will be served at [http://localhost:3000/ping](http://localhost:3000/ping).
+### 02 - Authentication HS256
+Learn how to secure your API using a JWT signed with HS256.
 
-Make a `GET` request to [http://localhost:3000/secured/ping](http://localhost:3000/secured/ping). This route will throw an error if you don't send a valid JWT in the `Authorization` header of the request.
-
-__Note:__ If you need to enable cross-origin resource sharing, check out the [rack-cors](https://github.com/cyu/rack-cors) gem.
-
-__Note:__ If you are using Windows, add the `tzinfo-data` gem to the gemfile.
+## Used Libraries
+* [Ruby JWT](https://github.com/jwt/ruby-jwt)

@@ -1,0 +1,812 @@
+Started GET "/" for ::1 at 2016-10-20 18:36:08 -0300
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/ezequielaranda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/railties-5.0.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/ezequielaranda/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/railties-5.0.0.1/lib/rails/templates/rails/welcome/index.html.erb (5.6ms)
+Completed 200 OK in 19ms (Views: 15.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2016-10-20 18:36:10 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+Started GET "/ping" for ::1 at 2016-10-20 18:36:13 -0300
+Processing by PingController#ping as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-10-20 18:36:24 -0300
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:Secured> at /Users/ezequielaranda/projects/auth0-rubyonrails-api-samples/app/controllers/concerns/secured.rb:6)
+Processing by SecuredPingController#ping as HTML
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 401 Unauthorized in 56ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/ping" for ::1 at 2016-10-20 18:36:48 -0300
+Processing by PingController#ping as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-10-20 18:36:55 -0300
+Processing by SecuredPingController#ping as HTML
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-10-20 18:43:02 -0300
+Processing by SecuredPingController#ping as */*
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 401 Unauthorized in 47ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-10-20 18:51:01 -0300
+Processing by SecuredPingController#ping as */*
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-10-20 18:51:07 -0300
+Processing by SecuredPingController#ping as */*
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-10-20 18:51:16 -0300
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:Secured> at /Users/ezequielaranda/projects/auth0-rubyonrails-api-samples/app/controllers/concerns/secured.rb:6)
+Processing by SecuredPingController#ping as */*
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 401 Unauthorized in 41ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-10-20 18:52:22 -0300
+Processing by SecuredPingController#ping as */*
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-10-20 18:56:58 -0300
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:Secured> at /Users/ezequielaranda/projects/auth0-rubyonrails-api-samples/app/controllers/concerns/secured.rb:6)
+Processing by SecuredPingController#ping as */*
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 401 Unauthorized in 39ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-10-20 19:05:55 -0300
+Processing by SecuredPingController#ping as */*
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 9ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/ping" for ::1 at 2016-10-20 19:06:33 -0300
+Processing by PingController#ping as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-10-20 19:09:13 -0300
+Processing by SecuredPingController#ping as */*
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-10-20 19:09:16 -0300
+Processing by SecuredPingController#ping as */*
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-10-20 19:09:24 -0300
+Processing by SecuredPingController#ping as */*
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-10-20 19:12:04 -0300
+Processing by SecuredPingController#ping as */*
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 12ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-10-20 19:12:57 -0300
+Processing by SecuredPingController#ping as */*
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-10-20 19:13:24 -0300
+Processing by SecuredPingController#ping as */*
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 8ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-10-20 19:22:53 -0300
+Processing by SecuredPingController#ping as */*
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-10-20 19:22:56 -0300
+Processing by SecuredPingController#ping as */*
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-10-20 19:23:47 -0300
+Processing by SecuredPingController#ping as */*
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 8ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-10-20 19:25:42 -0300
+Processing by SecuredPingController#ping as */*
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-10-20 19:43:09 -0300
+Processing by SecuredPingController#ping as */*
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-10-20 19:43:16 -0300
+Processing by SecuredPingController#ping as */*
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-10-20 19:43:19 -0300
+Processing by SecuredPingController#ping as */*
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-10-20 20:08:46 -0300
+Processing by SecuredPingController#ping as */*
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 18ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-10-20 20:09:07 -0300
+Processing by SecuredPingController#ping as */*
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-10-20 20:33:34 -0300
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:SecuredPingController> at /Users/ezequielaranda/projects/auth0-rubyonrails-api-samples/app/controllers/secured_ping_controller.rb:8)
+  
+AbstractController::ActionNotFound (The action 'ping' could not be found for SecuredPingController):
+  
+actionpack (5.0.0.1) lib/abstract_controller/base.rb:121:in `process'
+actionview (5.0.0.1) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.0.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.0.1) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.0.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.0.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.0.1) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+activerecord (5.0.0.1) lib/active_record/migration.rb:552:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+Started GET "/ping/secured" for ::1 at 2016-10-20 20:34:15 -0300
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:SecuredPingController> at /Users/ezequielaranda/projects/auth0-rubyonrails-api-samples/app/controllers/secured_ping_controller.rb:8)
+  
+AbstractController::ActionNotFound (The action 'ping' could not be found for SecuredPingController):
+  
+actionpack (5.0.0.1) lib/abstract_controller/base.rb:121:in `process'
+actionview (5.0.0.1) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.0.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.0.1) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.0.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.0.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.0.1) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+activerecord (5.0.0.1) lib/active_record/migration.rb:552:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+Started GET "/ping/secured" for ::1 at 2016-10-20 20:35:29 -0300
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:SecuredPingController> at /Users/ezequielaranda/projects/auth0-rubyonrails-api-samples/app/controllers/secured_ping_controller.rb:8)
+Processing by SecuredPingController#ping as */*
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-10-20 20:35:44 -0300
+Processing by SecuredPingController#ping as */*
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-10-20 20:35:50 -0300
+Processing by SecuredPingController#ping as */*
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-10-20 20:36:07 -0300
+Processing by SecuredPingController#ping as */*
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-10-20 20:36:09 -0300
+Processing by SecuredPingController#ping as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-10-20 20:36:09 -0300
+Processing by SecuredPingController#ping as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-10-20 20:36:10 -0300
+Processing by SecuredPingController#ping as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-10-20 20:37:27 -0300
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:SecuredPingController> at /Users/ezequielaranda/projects/auth0-rubyonrails-api-samples/app/controllers/secured_ping_controller.rb:8)
+Processing by SecuredPingController#ping as */*
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant ApplicationController::JWT):
+  
+app/controllers/application_controller.rb:8:in `rescue in authenticate_request!'
+app/controllers/application_controller.rb:6:in `authenticate_request!'
+Started GET "/ping/secured" for ::1 at 2016-10-20 20:38:43 -0300
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:SecuredPingController> at /Users/ezequielaranda/projects/auth0-rubyonrails-api-samples/app/controllers/secured_ping_controller.rb:8)
+Processing by SecuredPingController#ping as */*
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant ApplicationController::JWT):
+  
+app/controllers/application_controller.rb:10:in `rescue in authenticate_request!'
+app/controllers/application_controller.rb:8:in `authenticate_request!'
+Started GET "/ping/secured" for ::1 at 2016-10-20 20:40:23 -0300
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:SecuredPingController> at /Users/ezequielaranda/projects/auth0-rubyonrails-api-samples/app/controllers/secured_ping_controller.rb:8)
+Processing by SecuredPingController#ping as */*
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant ApplicationController::JWT):
+  
+app/controllers/application_controller.rb:10:in `rescue in authenticate_request!'
+app/controllers/application_controller.rb:7:in `authenticate_request!'
+Started GET "/ping/secured" for ::1 at 2016-10-20 20:45:44 -0300
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:SecuredPingController> at /Users/ezequielaranda/projects/auth0-rubyonrails-api-samples/app/controllers/secured_ping_controller.rb:8)
+Processing by SecuredPingController#ping as */*
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `e' for JsonWebToken:Class):
+  
+lib/json_web_token.rb:15:in `rescue in decode'
+lib/json_web_token.rb:13:in `decode'
+app/controllers/application_controller.rb:21:in `auth_token'
+app/controllers/application_controller.rb:6:in `authenticate_request!'
+Started GET "/ping/secured" for ::1 at 2016-10-20 20:48:19 -0300
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:SecuredPingController> at /Users/ezequielaranda/projects/auth0-rubyonrails-api-samples/app/controllers/secured_ping_controller.rb:8)
+Processing by SecuredPingController#ping as */*
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `supplied_token' for JsonWebToken:Class):
+  
+lib/json_web_token.rb:7:in `decode'
+app/controllers/application_controller.rb:21:in `auth_token'
+app/controllers/application_controller.rb:6:in `authenticate_request!'
+Started GET "/ping/secured" for ::1 at 2016-10-20 20:48:43 -0300
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:SecuredPingController> at /Users/ezequielaranda/projects/auth0-rubyonrails-api-samples/app/controllers/secured_ping_controller.rb:8)
+Processing by SecuredPingController#ping as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-10-20 20:49:01 -0300
+Processing by SecuredPingController#ping as */*
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `json' for JsonWebToken:Class):
+  
+lib/json_web_token.rb:15:in `rescue in decode'
+lib/json_web_token.rb:13:in `decode'
+app/controllers/application_controller.rb:21:in `auth_token'
+app/controllers/application_controller.rb:6:in `authenticate_request!'
+Started GET "/ping/secured" for ::1 at 2016-10-20 20:51:47 -0300
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:SecuredPingController> at /Users/ezequielaranda/projects/auth0-rubyonrails-api-samples/app/controllers/secured_ping_controller.rb:8)
+Processing by SecuredPingController#ping as */*
+Filter chain halted as :authenticate_request! rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-10-20 20:52:05 -0300
+Processing by SecuredPingController#ping as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-10-20 20:52:51 -0300
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:SecuredPingController> at /Users/ezequielaranda/projects/auth0-rubyonrails-api-samples/app/controllers/secured_ping_controller.rb:8)
+Processing by SecuredPingController#ping as */*
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x007fcabc5224a0>):
+  
+app/controllers/application_controller.rb:6:in `authenticate_request!'
+Started GET "/ping/secured" for ::1 at 2016-10-20 20:54:46 -0300
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:SecuredPingController> at /Users/ezequielaranda/projects/auth0-rubyonrails-api-samples/app/controllers/secured_ping_controller.rb:8)
+Processing by SecuredPingController#ping as */*
+Completed   in 61778ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-10-20 20:56:00 -0300
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:SecuredPingController> at /Users/ezequielaranda/projects/auth0-rubyonrails-api-samples/app/controllers/secured_ping_controller.rb:8)
+Processing by SecuredPingController#ping as */*
+Completed 200 OK in 24893ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-10-25 15:12:31 -0300
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:SecuredPingController> at /Users/ezequielaranda/projects/auth0-rubyonrails-api-samples/app/controllers/secured_ping_controller.rb:8)
+Processing by SecuredPingController#ping as */*
+Filter chain halted as :authenticate_request! rendered or redirected
+Completed 401 Unauthorized in 3ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-10-25 15:13:57 -0300
+Processing by SecuredPingController#ping as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-10-25 15:14:16 -0300
+Processing by SecuredPingController#ping as */*
+Filter chain halted as :authenticate_request! rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/" for ::1 at 2016-11-24 11:09:37 -0300
+Processing by PingController#ping as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-11-24 11:09:48 -0300
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:SecuredPingController> at /Users/ezequielaranda/projects/auth0-rubyonrails-api-samples/app/controllers/secured_ping_controller.rb:8)
+Processing by SecuredPingController#ping as */*
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-11-24 11:12:12 -0300
+Processing by SecuredPingController#ping as */*
+Filter chain halted as :authenticate_request! rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-11-24 11:13:32 -0300
+Processing by SecuredPingController#ping as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-11-24 11:13:46 -0300
+Processing by SecuredPingController#ping as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-11-24 11:16:38 -0300
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:SecuredPingController> at /Users/ezequielaranda/projects/auth0-rubyonrails-api-samples/app/controllers/secured_ping_controller.rb:8)
+Processing by SecuredPingController#ping as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-11-24 11:17:25 -0300
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:SecuredPingController> at /Users/ezequielaranda/projects/auth0-rubyonrails-api-samples/app/controllers/secured_ping_controller.rb:8)
+Processing by SecuredPingController#ping as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-11-24 11:17:30 -0300
+Processing by SecuredPingController#ping as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-11-24 11:21:20 -0300
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:SecuredPingController> at /Users/ezequielaranda/projects/auth0-rubyonrails-api-samples/app/controllers/secured_ping_controller.rb:8)
+Processing by SecuredPingController#ping as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-11-24 11:21:27 -0300
+Processing by SecuredPingController#ping as */*
+Filter chain halted as :authenticate_request! rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-11-24 11:21:33 -0300
+Processing by SecuredPingController#ping as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-11-24 11:21:36 -0300
+Processing by SecuredPingController#ping as */*
+Filter chain halted as :authenticate_request! rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-11-24 11:23:43 -0300
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:SecuredPingController> at /Users/ezequielaranda/projects/auth0-rubyonrails-api-samples/app/controllers/secured_ping_controller.rb:2)
+Processing by SecuredPingController#ping as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-11-24 11:25:56 -0300
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:SecuredPingController> at /Users/ezequielaranda/projects/auth0-rubyonrails-api-samples/app/controllers/secured_ping_controller.rb:2)
+Processing by SecuredPingController#ping as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-11-24 11:26:03 -0300
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:SecuredPingController> at /Users/ezequielaranda/projects/auth0-rubyonrails-api-samples/app/controllers/secured_ping_controller.rb:2)
+Processing by SecuredPingController#ping as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-11-24 11:26:16 -0300
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:SecuredPingController> at /Users/ezequielaranda/projects/auth0-rubyonrails-api-samples/app/controllers/secured_ping_controller.rb:2)
+Processing by SecuredPingController#ping as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-11-24 11:26:22 -0300
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:SecuredPingController> at /Users/ezequielaranda/projects/auth0-rubyonrails-api-samples/app/controllers/secured_ping_controller.rb:2)
+Processing by SecuredPingController#ping as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-11-24 11:26:23 -0300
+Processing by SecuredPingController#ping as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-11-24 11:26:41 -0300
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:SecuredPingController> at /Users/ezequielaranda/projects/auth0-rubyonrails-api-samples/app/controllers/secured_ping_controller.rb:2)
+Processing by SecuredPingController#ping as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-11-24 11:26:43 -0300
+Processing by SecuredPingController#ping as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-11-24 11:26:44 -0300
+Processing by SecuredPingController#ping as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-11-24 11:26:46 -0300
+Processing by SecuredPingController#ping as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-11-24 11:27:38 -0300
+  
+SyntaxError (/Users/ezequielaranda/projects/auth0-rubyonrails-api-samples/app/controllers/application_controller.rb:6: syntax error, unexpected keyword_rescue, expecting keyword_end
+  rescue JWT::VerificationError, JWT::DecodeError
+        ^
+/Users/ezequielaranda/projects/auth0-rubyonrails-api-samples/app/controllers/application_controller.rb:6: dynamic constant assignment
+  rescue JWT::VerificationError, JWT::DecodeError
+                                ^
+/Users/ezequielaranda/projects/auth0-rubyonrails-api-samples/app/controllers/application_controller.rb:6: dynamic constant assignment
+/Users/ezequielaranda/projects/auth0-rubyonrails-api-samples/app/controllers/application_controller.rb:6: syntax error, unexpected '\n', expecting '='
+/Users/ezequielaranda/projects/auth0-rubyonrails-api-samples/app/controllers/application_controller.rb:24: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/application_controller.rb:6: syntax error, unexpected keyword_rescue, expecting keyword_end
+app/controllers/application_controller.rb:6: dynamic constant assignment
+app/controllers/application_controller.rb:6: dynamic constant assignment
+app/controllers/application_controller.rb:6: syntax error, unexpected '\n', expecting '='
+app/controllers/application_controller.rb:24: syntax error, unexpected end-of-input, expecting keyword_end
+app/controllers/secured_ping_controller.rb:1:in `<top (required)>'
+Started GET "/ping/secured" for ::1 at 2016-11-24 11:28:44 -0300
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:SecuredPingController> at /Users/ezequielaranda/projects/auth0-rubyonrails-api-samples/app/controllers/secured_ping_controller.rb:2)
+Processing by SecuredPingController#ping as */*
+Filter chain halted as :authenticate_request! rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-11-24 11:28:51 -0300
+Processing by SecuredPingController#ping as */*
+Filter chain halted as :authenticate_request! rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-11-24 11:28:56 -0300
+Processing by SecuredPingController#ping as */*
+Filter chain halted as :authenticate_request! rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-11-24 11:29:36 -0300
+Processing by SecuredPingController#ping as */*
+Filter chain halted as :authenticate_request! rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-11-24 11:30:02 -0300
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:SecuredPingController> at /Users/ezequielaranda/projects/auth0-rubyonrails-api-samples/app/controllers/secured_ping_controller.rb:2)
+Processing by SecuredPingController#ping as */*
+Filter chain halted as :authenticate_request! rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-11-24 11:30:50 -0300
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:SecuredPingController> at /Users/ezequielaranda/projects/auth0-rubyonrails-api-samples/app/controllers/secured_ping_controller.rb:2)
+Processing by SecuredPingController#ping as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-11-24 11:30:55 -0300
+Processing by SecuredPingController#ping as */*
+Filter chain halted as :authenticate_request! rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-11-24 11:31:01 -0300
+Processing by SecuredPingController#ping as */*
+Filter chain halted as :authenticate_request! rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-11-24 11:33:06 -0300
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:SecuredPingController> at /Users/ezequielaranda/projects/auth0-rubyonrails-api-samples/app/controllers/secured_ping_controller.rb:2)
+Processing by SecuredPingController#ping as */*
+Completed 200 OK in 57223ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-11-24 11:34:13 -0300
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:SecuredPingController> at /Users/ezequielaranda/projects/auth0-rubyonrails-api-samples/app/controllers/secured_ping_controller.rb:2)
+Processing by SecuredPingController#ping as */*
+Completed 200 OK in 45543ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-11-24 11:35:06 -0300
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:SecuredPingController> at /Users/ezequielaranda/projects/auth0-rubyonrails-api-samples/app/controllers/secured_ping_controller.rb:2)
+Processing by SecuredPingController#ping as */*
+Completed 200 OK in 10412ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-11-24 11:35:28 -0300
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:SecuredPingController> at /Users/ezequielaranda/projects/auth0-rubyonrails-api-samples/app/controllers/secured_ping_controller.rb:2)
+Processing by SecuredPingController#ping as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-11-24 11:35:31 -0300
+Processing by SecuredPingController#ping as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for ::1 at 2016-11-24 11:36:40 -0300
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:SecuredPingController> at /Users/ezequielaranda/projects/auth0-rubyonrails-api-samples/app/controllers/secured_ping_controller.rb:2)
+Processing by SecuredPingController#ping as */*
+Filter chain halted as :authenticate_request! rendered or redirected
+Completed 401 Unauthorized in 4459ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for 127.0.0.1 at 2016-11-25 11:18:29 -0300
+Processing by SecuredPingController#ping as */*
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+lib/json_web_token.rb:4:in `decode'
+app/controllers/application_controller.rb:17:in `auth_token'
+app/controllers/application_controller.rb:4:in `authenticate_request!'
+Started GET "/ping/secured" for 127.0.0.1 at 2016-11-25 11:21:07 -0300
+Processing by SecuredPingController#ping as */*
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+lib/json_web_token.rb:4:in `decode'
+app/controllers/concerns/secured.rb:23:in `auth_token'
+app/controllers/concerns/secured.rb:10:in `authenticate_request!'
+Started GET "/ping/secured" for 127.0.0.1 at 2016-11-25 11:22:06 -0300
+Processing by SecuredPingController#ping as */*
+Completed 500 Internal Server Error in 61ms (ActiveRecord: 0.0ms)
+
+
+  
+LoadError (dlopen(/Users/ijonas/.rbenv/versions/2.2.2/lib/ruby/2.2.0/x86_64-darwin14/readline.bundle, 9): Library not loaded: /usr/local/opt/readline/lib/libreadline.6.dylib
+  Referenced from: /Users/ijonas/.rbenv/versions/2.2.2/lib/ruby/2.2.0/x86_64-darwin14/readline.bundle
+  Reason: image not found - /Users/ijonas/.rbenv/versions/2.2.2/lib/ruby/2.2.0/x86_64-darwin14/readline.bundle):
+  
+app/controllers/concerns/secured.rb:23:in `auth_token'
+app/controllers/concerns/secured.rb:10:in `authenticate_request!'
+Started GET "/ping/secured" for 127.0.0.1 at 2016-11-25 11:22:12 -0300
+Processing by SecuredPingController#ping as */*
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+LoadError (dlopen(/Users/ijonas/.rbenv/versions/2.2.2/lib/ruby/2.2.0/x86_64-darwin14/readline.bundle, 9): Library not loaded: /usr/local/opt/readline/lib/libreadline.6.dylib
+  Referenced from: /Users/ijonas/.rbenv/versions/2.2.2/lib/ruby/2.2.0/x86_64-darwin14/readline.bundle
+  Reason: image not found - /Users/ijonas/.rbenv/versions/2.2.2/lib/ruby/2.2.0/x86_64-darwin14/readline.bundle):
+  
+app/controllers/concerns/secured.rb:23:in `auth_token'
+app/controllers/concerns/secured.rb:10:in `authenticate_request!'
+Started GET "/ping/secured" for 127.0.0.1 at 2016-11-25 11:22:53 -0300
+Processing by SecuredPingController#ping as */*
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+LoadError (dlopen(/Users/ijonas/.rbenv/versions/2.2.2/lib/ruby/2.2.0/x86_64-darwin14/readline.bundle, 9): Library not loaded: /usr/local/opt/readline/lib/libreadline.6.dylib
+  Referenced from: /Users/ijonas/.rbenv/versions/2.2.2/lib/ruby/2.2.0/x86_64-darwin14/readline.bundle
+  Reason: image not found - /Users/ijonas/.rbenv/versions/2.2.2/lib/ruby/2.2.0/x86_64-darwin14/readline.bundle):
+  
+app/controllers/concerns/secured.rb:23:in `auth_token'
+app/controllers/concerns/secured.rb:10:in `authenticate_request!'
+Started GET "/ping/secured" for 127.0.0.1 at 2016-11-25 11:23:47 -0300
+Processing by SecuredPingController#ping as */*
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+LoadError (dlopen(/Users/ijonas/.rbenv/versions/2.2.2/lib/ruby/2.2.0/x86_64-darwin14/readline.bundle, 9): Library not loaded: /usr/local/opt/readline/lib/libreadline.6.dylib
+  Referenced from: /Users/ijonas/.rbenv/versions/2.2.2/lib/ruby/2.2.0/x86_64-darwin14/readline.bundle
+  Reason: image not found - /Users/ijonas/.rbenv/versions/2.2.2/lib/ruby/2.2.0/x86_64-darwin14/readline.bundle):
+  
+app/controllers/concerns/secured.rb:23:in `auth_token'
+app/controllers/concerns/secured.rb:10:in `authenticate_request!'
+Started GET "/ping/secured" for 127.0.0.1 at 2016-11-25 11:35:48 -0300
+Processing by SecuredPingController#ping as */*
+Completed 500 Internal Server Error in 9784ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+lib/json_web_token.rb:4:in `decode'
+app/controllers/concerns/secured.rb:24:in `auth_token'
+app/controllers/concerns/secured.rb:10:in `authenticate_request!'
+Started GET "/ping/secured" for 127.0.0.1 at 2016-11-25 11:37:50 -0300
+Processing by SecuredPingController#ping as */*
+Completed 500 Internal Server Error in 109851ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+lib/json_web_token.rb:5:in `decode'
+app/controllers/concerns/secured.rb:22:in `auth_token'
+app/controllers/concerns/secured.rb:10:in `authenticate_request!'
+Started GET "/ping/secured" for 127.0.0.1 at 2016-11-25 11:39:48 -0300
+Processing by SecuredPingController#ping as */*
+Filter chain halted as :authenticate_request! rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for 127.0.0.1 at 2016-11-25 11:40:29 -0300
+Processing by SecuredPingController#ping as */*
+Filter chain halted as :authenticate_request! rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for 127.0.0.1 at 2016-11-25 11:41:06 -0300
+Processing by SecuredPingController#ping as */*
+Completed   in 61185ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for 127.0.0.1 at 2016-11-25 11:42:15 -0300
+Processing by SecuredPingController#ping as */*
+Filter chain halted as :authenticate_request! rendered or redirected
+Completed 401 Unauthorized in 6364ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for 127.0.0.1 at 2016-11-25 11:43:06 -0300
+Processing by SecuredPingController#ping as */*
+Filter chain halted as :authenticate_request! rendered or redirected
+Completed 401 Unauthorized in 2405ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for 127.0.0.1 at 2016-11-25 11:43:44 -0300
+Processing by SecuredPingController#ping as */*
+Completed 200 OK in 2732ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ping/secured" for 127.0.0.1 at 2016-11-25 11:43:55 -0300
+Processing by SecuredPingController#ping as */*
+Filter chain halted as :authenticate_request! rendered or redirected
+Completed 401 Unauthorized in 2046ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
