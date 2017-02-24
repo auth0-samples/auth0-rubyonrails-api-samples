@@ -1,6 +1,6 @@
 # Secured ping Controller
 class SecuredPingController < ApplicationController
-  before_action :authenticate
+  before_action :authenticate_user
 
   def ping
     render json: {

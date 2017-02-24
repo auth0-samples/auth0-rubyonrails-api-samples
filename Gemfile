@@ -24,7 +24,7 @@ gem 'jbuilder', '~> 2.4.1'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.1', group: :doc
 # knock dependency
-gem 'knock', '~> 1.4.2'
+gem 'knock', '~> 2.1.1'
 
 # Dot env
 gem 'dotenv-rails', groups: [:development, :test]
