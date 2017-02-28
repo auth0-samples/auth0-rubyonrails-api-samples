@@ -1,19 +1,5 @@
 require 'base64'
 Knock.setup do |config|
-  ## Current user retrieval when validating token
-  ## --------------------------------------------
-  ##
-  ## This is how you can tell Knock how to retrieve the current_user.
-  ## By default, it assumes you have a model called `User` and that
-  ## the user_id is stored in the 'sub' claim.
-  ##
-  ## Default:
-  # config.current_user_from_token = -> (claims) { User.find claims['sub'] }
-
-  # !!!
-  # This is only to make the example test cases pass, you should use a real
-  # user model in your app instead.
-  config.current_user_from_token = -> (claims) { { id: claims['sub'] } }
 
   ## Expiration claim
   ## ----------------
