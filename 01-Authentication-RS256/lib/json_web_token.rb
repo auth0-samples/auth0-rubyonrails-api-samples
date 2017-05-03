@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 class JsonWebToken
-  def self.decode(token)
+  def self.verify(token)
     JWT.decode(token, nil,
                true, # Verify the signature of this token
                algorithm: 'RS256',

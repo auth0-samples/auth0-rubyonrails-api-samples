@@ -28,7 +28,7 @@ module Secured
   end
 
   def auth_token
-    JsonWebToken.decode(http_token)
+    JsonWebToken.verify(http_token)
   end
 
   def scope_included
