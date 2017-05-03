@@ -1,6 +1,6 @@
 class JsonWebToken
 
-  def self.decode(token)
+  def self.verify(token)
     JWT.decode token,  Rails.application.secrets.auth0_api_signing_secret,
     true, # Verify the signature of this token
     algorithm: 'HS256',

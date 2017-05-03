@@ -26,11 +26,11 @@ __Note:__ If you are using Windows, uncomment the `tzinfo-data` gem in the gemfi
 ## Important Snippets
 
 ### 1. Auth0 Lock Setup
-[JsonWebToken Decode Method Code](/01-Authentication-HS256/lib/json_web_token.erb)
+[JsonWebToken Verify Method Code](/01-Authentication-HS256/lib/json_web_token.erb)
 ```ruby
 class JsonWebToken
 
-  def self.decode(token)
+  def self.verify(token)
     JWT.decode token,  Rails.application.secrets.auth0_api_signing_secret,
     true, # Verify the signature of this token
     algorithm: 'HS256',
