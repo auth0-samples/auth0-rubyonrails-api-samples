@@ -1,9 +1,10 @@
 # Authentication RS256
-[Full Tutorial](https://auth0.com/docs/quickstart/backend/rails/01-authentication-RS256)
+[Full Tutorial](https://auth0.com/docs/quickstart/backend/rails/01-authorization)
 
 This example shows how to secure your Rails API using RS256 signed, Auth0-issued JSON Web Tokens.
 
 ## Running the Sample Application
+
 In order to run the example you need to have Ruby installed.
 
 You also need to set the Domain, and API Audience for your Rails API as environment variables with the following names respectively: `AUTH0_DOMAIN` and `AUTH0_AUDIENCE`.
@@ -21,6 +22,14 @@ __Note:__ Remember that you need to have `./bin` in your path for `rails s` to w
 Shut it down manually with Ctrl-C.
 
 __Note:__ If you are using Windows, uncomment the `tzinfo-data` gem in the gemfile.
+
+## Running the Sample Application With Docker
+
+In order to run the example with docker you need to have `docker` installed.
+
+You also need to set the client credentials as explained [previously](#running-the-sample-application).
+
+Execute in command line `sh exec.sh` to run the Docker in Linux, or `.\exec.ps1` to run the Docker in Windows.
 
 ## Important Snippets
 

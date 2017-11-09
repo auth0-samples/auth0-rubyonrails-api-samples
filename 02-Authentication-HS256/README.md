@@ -1,5 +1,5 @@
 # Authentication HS256
-[Full Tutorial](https://auth0.com/docs/quickstart/backend/rails/02-authentication-HS256)
+[Full Tutorial](https://auth0.com/docs/quickstart/backend/rails)
 
 This example shows how to secure your Rails API using HS256 signed, Auth0-issued JSON Web Tokens.
 
@@ -22,6 +22,14 @@ __Note:__ Remember that you need to have `./bin` in your path for `rails s` to w
 Shut it down manually with Ctrl-C.
 
 __Note:__ If you are using Windows, uncomment the `tzinfo-data` gem in the gemfile.
+
+## Running the Sample Application With Docker
+
+In order to run the example with docker you need to have `docker` installed.
+
+You also need to set the client credentials as explained [previously](#running-the-sample-application).
+
+Execute in command line `sh exec.sh` to run the Docker in Linux, or `.\exec.ps1` to run the Docker in Windows.
 
 ## Important Snippets
 
