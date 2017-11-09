@@ -1,9 +1,10 @@
 # Authentication RS256
-[Full Tutorial](https://auth0.com/docs/quickstart/backend/rails/01-authentication-RS256)
+[Full Tutorial](https://auth0.com/docs/quickstart/backend/rails/01-authorization)
 
 This example shows how to secure your Rails API using RS256 signed, Auth0-issued JSON Web Tokens.
 
 ## Running the Sample Application
+
 In order to run the example you need to have Ruby installed.
 
 You also need to set the Domain, and API Audience for your Rails API as environment variables with the following names respectively: `AUTH0_DOMAIN` and `AUTH0_AUDIENCE`.

@@ -1,5 +1,5 @@
 # Authentication HS256
-[Full Tutorial](https://auth0.com/docs/quickstart/backend/rails/02-authentication-HS256)
+[Full Tutorial](https://auth0.com/docs/quickstart/backend/rails)
 
 This example shows how to secure your Rails API using HS256 signed, Auth0-issued JSON Web Tokens.
 
