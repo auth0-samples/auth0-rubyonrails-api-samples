@@ -6,5 +6,5 @@ ADD Gemfile /myapp/Gemfile
 ADD Gemfile.lock /myapp/Gemfile.lock
 RUN gem install bundler && bundle install --jobs 20 --retry 5
 ADD . /myapp
-CMD /myapp/bin/rails s -b 0.0.0.0
-EXPOSE 3000
+CMD /myapp/bin/rails s -b 0.0.0.0 -p 3010
+EXPOSE 3010
