@@ -3,8 +3,8 @@ module Secured
   extend ActiveSupport::Concern
 
   SCOPES = {
-    '/ping/secured'    => ['read:messages'],
-    '/another_service' => ['some:scope', 'some:other_scope']
+    '/api/private'    => nil,
+    '/api/private-scoped' => ['read:messages']
   }
 
   included do
@@ -34,6 +34,10 @@ module Secured
   def scope_included
     # The intersection of the scopes included in the given JWT and the ones in the SCOPES hash needed to access
     # the PATH_INFO, should contain at least one element
-    (String(@auth_payload['scope']).split(' ') & (SCOPES[request.env['PATH_INFO']])).any?
+    if SCOPES[request.env['PATH_INFO']] == nil
+      true
+    else
+      (String(@auth_payload['scope']).split(' ') & (SCOPES[request.env['PATH_INFO']])).any?
+    end
   end
 end

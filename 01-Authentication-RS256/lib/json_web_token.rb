@@ -1,10 +1,13 @@
 # frozen_string_literal: true
+require 'net/http'
+require 'uri'
+
 class JsonWebToken
   def self.verify(token)
     JWT.decode(token, nil,
                true, # Verify the signature of this token
                algorithm: 'RS256',
-               iss: Rails.application.secrets.auth0_domain,
+               iss: "https://#{Rails.application.secrets.auth0_domain}/",
                verify_iss: true,
                aud: Rails.application.secrets.auth0_api_audience,
                verify_aud: true) do |header|
@@ -13,7 +16,7 @@ class JsonWebToken
   end
 
   def self.jwks_hash
-    jwks_raw = Net::HTTP.get URI("#{Rails.application.secrets.auth0_domain}.well-known/jwks.json")
+    jwks_raw = Net::HTTP.get URI("https://#{Rails.application.secrets.auth0_domain}/.well-known/jwks.json")
     jwks_keys = Array(JSON.parse(jwks_raw)['keys'])
     Hash[
       jwks_keys
