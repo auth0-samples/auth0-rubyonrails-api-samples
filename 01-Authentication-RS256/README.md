@@ -16,7 +16,7 @@ Set the environment variables in `.env` to match those in your Auth0 API.
 AUTH0_DOMAIN="myAuth0Domain"
 AUTH0_AUDIENCE=myAPIAudience
 ````
-Once you've set these environment variables, run `bundle install` and then `rails s`. You can follow the instructions in the [Full Tutorial](https://auth0.com/docs/quickstart/backend/rails/01-authentication-RS256) to an access token and then call the secured API endpoint.
+Once you've set these environment variables, run `bundle install` and then `rails s --port 3010`. You can follow the instructions in the [Full Tutorial](https://auth0.com/docs/quickstart/backend/rails/01-authentication-RS256) to an access token and then call the secured API endpoint.
 __Note:__ Remember that you need to have `./bin` in your path for `rails s` to work.
 
 Shut it down manually with Ctrl-C.
