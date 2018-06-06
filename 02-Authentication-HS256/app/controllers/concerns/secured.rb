@@ -15,7 +15,7 @@ module Secured
   def authenticate_request!
     @auth_payload, @auth_header = auth_token
 
-    render json: { errors: ['Insufficient scope'] }, status: :unauthorized unless scope_included
+    render json: { errors: ['Insufficient scope'] }, status: :forbidden unless scope_included
   rescue JWT::VerificationError, JWT::DecodeError
     render json: { errors: ['Not Authenticated'] }, status: :unauthorized
   end
