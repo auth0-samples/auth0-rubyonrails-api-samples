@@ -16,6 +16,7 @@ defaults: &defaults
                 sed -i 's|{API_IDENTIFIER}|'$api_identifier_hs256'|g' .env
                 sed -i 's|{CLIENT_SECRET}|'$api_signging_secret'|g' .env
             fi
+            head .env
       - run:
           name: Background Server
           command: cd $AUTH0_CFG && sh exec.sh
@@ -47,6 +48,7 @@ defaults: &defaults
             echo "AUTH0_CLIENT_SECRET_4=$client_secret_scopes_readwrite" >> .env
             echo "API_URL=http://localhost:3010" >> .env
             npm install
+            head .env
       - run:
           name: Execute automated tests
           command: cd test && npm test       
