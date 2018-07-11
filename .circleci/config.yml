@@ -14,7 +14,7 @@ defaults: &defaults
                 sed -i 's|{API_IDENTIFIER}|'$api_identifier'|g' .env
             else
                 sed -i 's|{API_IDENTIFIER}|'$api_identifier_hs256'|g' .env
-                sed -i 's|{CLIENT_SECRET}|'$api_signging_secret'|g' .env
+                sed -i 's|{CLIENT_SECRET}|'$api_signing_secret'|g' .env
             fi
             head .env
       - run:
