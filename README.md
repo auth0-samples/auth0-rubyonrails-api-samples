@@ -1,5 +1,7 @@
 # Auth0 Ruby on Rails API Sample
 
+[![CircleCI](https://img.shields.io/circleci/project/github/auth0-samples/auth0-rubyonrails-api-samples.svg?style=flat-square)](https://circleci.com/gh/auth0-samples/auth0-rubyonrails-api-samples/tree/master)
+
 This project goal is to help integrating Auth0 capabilities in your Ruby on Rails API.
 
 You can learn more about the seed project and samples in the [Auth0 Rails API quickstart](https://auth0.com/docs/quickstart/backend/rails).
