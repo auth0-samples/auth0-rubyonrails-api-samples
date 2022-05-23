@@ -4,7 +4,7 @@ RUN mkdir /myapp
 WORKDIR /myapp
 ADD Gemfile /myapp/Gemfile
 ADD Gemfile.lock /myapp/Gemfile.lock
-ENV BUNDLER_VERSION 1.16.5
+ENV BUNDLER_VERSION 1.17.3
 RUN gem install bundler -v ${BUNDLER_VERSION} && bundle install --jobs 20 --retry 5
 ADD . /myapp
 CMD /myapp/bin/rails s -b 0.0.0.0 -p 3010
