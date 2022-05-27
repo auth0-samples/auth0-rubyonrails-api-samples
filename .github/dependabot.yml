@@ -1,0 +1,18 @@
+version: 2
+updates:
+
+  - package-ecosystem: "bundler" 
+    directory: "/01-Authentication-RS256" 
+    schedule:
+      interval: "daily"
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
+      
+  - package-ecosystem: "bundler" 
+    directory: "/2-Authentication-HS256" 
+    schedule:
+      interval: "daily"
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
