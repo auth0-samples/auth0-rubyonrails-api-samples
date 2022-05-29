@@ -83,9 +83,9 @@ GEM
     puma (4.3.12)
       nio4r (~> 2.0)
     racc (1.6.0)
-    rack (2.2.3)
-    rack-cors (1.0.5)
-      rack (>= 1.6.0)
+    rack (2.2.3.1)
+    rack-cors (1.1.1)
+      rack (>= 2.0.0)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rails (5.2.8)
@@ -146,7 +146,7 @@ DEPENDENCIES
   pry-rails
   puma (~> 4.3)
   rack-cors
-  rails (~> 5.2.7, >= 5.2.7.1)
+  rails (~> 5.2.8)
   spring
   spring-watcher-listen (~> 2.0.1)
   tzinfo-data
