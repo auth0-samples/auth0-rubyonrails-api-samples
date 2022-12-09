@@ -150,10 +150,7 @@ GEM
     rb-fsevent (0.11.2)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
-    spring (2.1.1)
-    spring-watcher-listen (2.0.1)
-      listen (>= 2.7, < 4.0)
-      spring (>= 1.2, < 3.0)
+    spring (3.0.0)
     thor (1.2.1)
     timeout (0.3.0)
     tzinfo (2.0.5)
@@ -168,15 +165,14 @@ PLATFORMS
 
 DEPENDENCIES
   byebug
-  dotenv-rails
+  dotenv-rails (~> 2.8.1)
   jwt
   listen (~> 3.7.1)
   pry-rails
   puma (~> 5.0)
   rack-cors (>= 1.1.1)
   rails (~> 7.0.3, >= 7.0.3.1)
-  spring
-  spring-watcher-listen (~> 2.0.1)
+  spring (~> 3.0.0)
   tzinfo-data
 
 RUBY VERSION

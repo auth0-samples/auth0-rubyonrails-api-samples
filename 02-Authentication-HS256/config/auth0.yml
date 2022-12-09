@@ -1,4 +1,4 @@
 development:
   domain: <%= ENV["AUTH0_DOMAIN"] %>
-  audience: <%= ENV["AUTH0_AUDIENCE"] %>
+  audience: <%= ENV["AUTH0_API_AUDIENCE"] %>
   signing_secret: <%= ENV["AUTH0_API_SIGNING_SECRET"] %>
