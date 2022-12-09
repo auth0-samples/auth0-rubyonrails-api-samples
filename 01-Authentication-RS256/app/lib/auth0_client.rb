@@ -3,8 +3,8 @@
 require 'jwt'
 require 'net/http'
 
-class Auth0Client 
-
+# Auth0Client class to handle JWT token validation
+class Auth0Client
   # Auth0 Client Objects 
   Error = Struct.new(:message, :status)
   Response = Struct.new(:decoded_token, :error)
