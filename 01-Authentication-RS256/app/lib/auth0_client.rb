@@ -26,7 +26,7 @@ class Auth0Client
                  algorithm: 'RS256',
                  iss: domain_url,
                  verify_iss: true,
-                 aud: Rails.configuration.auth0.audience.to_s,
+                 aud: Rails.configuration.auth0.audience,
                  verify_aud: true,
                  jwks: { keys: jwks_hash[:keys] }
                })
