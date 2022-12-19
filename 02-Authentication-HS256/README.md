@@ -34,7 +34,7 @@ Execute in command line `sh exec.sh` to run the Docker in Linux, or `.\exec.ps1`
 ## Important Snippets
 
 ### 1. Auth0 Lock Setup
-[Auth0Client Validate Token Method Code](/01-Authentication-HS256/app/lib/auth0_client.rb)
+[Auth0Client Validate Token Method Code](/02-Authentication-HS256/app/lib/auth0_client.rb)
 ```ruby
 class Auth0Client
   # Auth0 Client Objects
