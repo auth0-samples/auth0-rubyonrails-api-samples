@@ -5,9 +5,11 @@ require 'net/http'
 
 # Auth0Client class to handle JWT token validation
 class Auth0Client
+
   # Auth0 Client Objects
   Error = Struct.new(:message, :status)
   Response = Struct.new(:decoded_token, :error)
+
   Token = Struct.new(:token) do
     def validate_permissions(permissions)
       required_permissions = Set.new permissions

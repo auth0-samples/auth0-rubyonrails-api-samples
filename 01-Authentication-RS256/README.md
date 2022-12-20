@@ -37,9 +37,11 @@ Execute in command line `sh exec.sh` to run the Docker in Linux, or `.\exec.ps1`
 [Auth0Client Validate Token Method Code](/01-Authentication-RS256/app/lib/auth0_client.rb)
 ```ruby
 class Auth0Client
+
   # Auth0 Client Objects 
   Error = Struct.new(:message, :status)
   Response = Struct.new(:decoded_token, :error)
+
   Token = Struct.new(:token) do
     def validate_permissions(permissions)
       required_permissions = Set.new permissions
