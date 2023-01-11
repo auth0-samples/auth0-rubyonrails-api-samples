@@ -81,8 +81,8 @@ GEM
       activesupport (>= 5.0)
     i18n (1.12.0)
       concurrent-ruby (~> 1.0)
-    jwt (2.5.0)
-    listen (3.7.1)
+    jwt (2.6.0)
+    listen (3.8.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     loofah (2.19.1)
@@ -170,7 +170,7 @@ DEPENDENCIES
   byebug
   dotenv-rails (~> 2.8.1)
   jwt
-  listen (~> 3.7.1)
+  listen (~> 3.8.0)
   pry-rails
   puma (~> 5.0)
   rack-cors (>= 1.1.1)
