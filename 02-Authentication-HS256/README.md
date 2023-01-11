@@ -34,18 +34,47 @@ Execute in command line `sh exec.sh` to run the Docker in Linux, or `.\exec.ps1`
 ## Important Snippets
 
 ### 1. Auth0 Lock Setup
-[JsonWebToken Verify Method Code](/01-Authentication-HS256/lib/json_web_token.erb)
+[Auth0Client Validate Token Method Code](/02-Authentication-HS256/app/lib/auth0_client.rb)
 ```ruby
-class JsonWebToken
+class Auth0Client
 
-  def self.verify(token)
-    JWT.decode token,  Rails.application.secrets.auth0_api_signing_secret,
-    true, # Verify the signature of this token
-    algorithm: 'HS256',
-    iss: Rails.application.secrets.auth0_domain,
-    verify_iss: true,
-    aud: Rails.application.secrets.auth0_api_audience,
-    verify_aud: true
+  # Auth0 Client Objects
+  Error = Struct.new(:message, :status)
+  Response = Struct.new(:decoded_token, :error)
+
+  Token = Struct.new(:token) do
+    def validate_permissions(permissions)
+      required_permissions = Set.new permissions
+      scopes = token[0]['scope']
+      token_permissions = scopes.present? ? Set.new(scopes.split(" ")) : Set.new
+      required_permissions <= token_permissions
+    end
+  end
+
+  # Helper Functions
+  def self.domain_url
+    "https://#{Rails.configuration.auth0.domain}/"
+  end
+
+  def self.decode_token(token)
+    JWT.decode(token,
+               Rails.configuration.auth0.signing_secret,
+               true, # Verify the signature of this token
+               { algorithm: 'HS256',
+                 iss: domain_url,
+                 verify_iss: true,
+                 aud: Rails.configuration.auth0.audience,
+                 verify_aud: true })
+  end
+
+  # Token Validation
+  def self.validate_token(token)
+    decoded_token = decode_token(token)
+
+    Response.new(Token.new(decoded_token), nil)
+  rescue JWT::VerificationError, JWT::DecodeError
+    error = Error.new('Bad credentials', :unauthorized)
+    Response.new(nil, error)
   end
 end
 ```
