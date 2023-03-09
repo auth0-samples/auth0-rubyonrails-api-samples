@@ -45,7 +45,7 @@ class Auth0Client
     jwks_response = get_jwks
 
     unless jwks_response.is_a? Net::HTTPSuccess
-      error = Error.new(message: 'Unable to verify credentials', status: :internal_server_error)
+      error = Error.new('Unable to verify credentials', :internal_server_error)
       return Response.new(nil, error)
     end
 
